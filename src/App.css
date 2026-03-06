@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Áp dark mode lên html và body */
+html.dark {
+  background-color: #111827;
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #111827;
+}
