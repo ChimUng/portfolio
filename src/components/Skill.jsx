@@ -17,6 +17,7 @@ const MySkill = () => {
       badges: [
         { label: "Spring Boot", color: "6DB33F", logo: "springboot", logoColor: "white" },
         { label: "React",       color: "61DAFB", logo: "react",      logoColor: "black" },
+        { label: "Node.js",     color: "339933", logo: "nodedotjs",  logoColor: "white" },
         { label: "Next.js",     color: "000000", logo: "nextdotjs",  logoColor: "white" },
       ]
     },
