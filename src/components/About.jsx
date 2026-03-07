@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaUser, FaLocationDot, FaEnvelope, FaPhone, FaBriefcase } from "react-icons/fa6";
-import { FaUniversity, FaDownload } from "react-icons/fa";
+import { FaUniversity, FaDownload, FaEye } from "react-icons/fa";
 import RevealOnScroll from "../animations/RevealOnScroll";
 import { imageAnim, itemSlide, buttonAnim, containerSlide } from "../animations/animations";
 import img from "../assets/img/avata.jpg";
@@ -9,14 +9,20 @@ import img from "../assets/img/avata.jpg";
 const About = () => {
   return (
     <RevealOnScroll>
-      <motion.div initial="hidden" animate="show" variants={containerSlide}
-        className="flex flex-col md:flex-row gap-8 items-center max-w-6xl mx-auto px-4 py-12 mt-30">
-
+      <motion.div
+        initial="hidden"
+        animate="show"
+        variants={containerSlide}
+        className="flex flex-col md:flex-row gap-8 items-center max-w-6xl mx-auto px-4 py-12 mt-30"
+      >
         {/* Image */}
         <motion.div variants={imageAnim} className="w-full md:w-1/2 flex justify-center">
           <div id="about" className="relative group w-full max-w-md">
-            <img src={img} alt="About me"
-              className="rounded-xl shadow-2xl w-full h-[480px] object-cover transition-all duration-500 group-hover:scale-105" />
+            <img
+              src={img}
+              alt="About me"
+              className="rounded-xl shadow-2xl w-full h-[480px] object-cover transition-all duration-500 group-hover:scale-105"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-xl" />
             <div className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-gray-200 dark:border-gray-600 -z-10 group-hover:-bottom-2 group-hover:-right-2 group-hover:border-black dark:group-hover:border-white transition-all duration-300" />
           </div>
@@ -24,8 +30,10 @@ const About = () => {
 
         {/* Content */}
         <motion.div variants={containerSlide} className="w-full md:w-1/2 space-y-6">
-          <motion.h1 variants={itemSlide}
-            className="font-bold text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-400">
+          <motion.h1
+            variants={itemSlide}
+            className="font-bold text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-400"
+          >
             About Me
           </motion.h1>
 
@@ -47,9 +55,12 @@ const About = () => {
               { icon: <FaPhone className="text-xl text-gray-700 dark:text-gray-300" />,       title: "Phone",       content: "0982 870 931" },
               { icon: <FaBriefcase className="text-xl text-gray-700 dark:text-gray-300" />,   title: "Profession",  content: "Student / Developer" },
             ].map((card, index) => (
-              <motion.div key={index} variants={itemSlide}
+              <motion.div
+                key={index}
+                variants={itemSlide}
                 whileHover={{ y: -3, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}
-                className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-4 flex items-center gap-3 transition-all hover:bg-gray-50 dark:hover:bg-gray-700 border-2 border-transparent dark:border-gray-700">
+                className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-4 flex items-center gap-3 transition-all hover:bg-gray-50 dark:hover:bg-gray-700 border-2 border-transparent dark:border-gray-700"
+              >
                 {card.icon}
                 <div>
                   <span className="text-sm font-bold text-gray-900 dark:text-white">{card.title}</span>
@@ -59,12 +70,33 @@ const About = () => {
             ))}
           </motion.div>
 
-          <motion.div variants={itemSlide} className="flex gap-4 mt-8">
-            <motion.a href="/NguyenHongDuy.pdf" download="NguyenHongDuy_CV.pdf"
-              variants={buttonAnim} whileHover="hover" whileTap="tap"
-              className="bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg cursor-pointer hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">
+          {/* Buttons */}
+          <motion.div variants={itemSlide} className="flex gap-3 mt-8 flex-wrap">
+            {/* Download CV */}
+            <motion.a
+              href="NguyenHongDuy.pdf"
+              download="NguyenHongDuy_CV.pdf"
+              variants={buttonAnim}
+              whileHover="hover"
+              whileTap="tap"
+              className="bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+            >
               <FaDownload />
               Download My CV
+            </motion.a>
+
+            {/* See My CV — mở tab mới, chiếm toàn màn hình */}
+            <motion.a
+              href="NguyenHongDuy.pdf"
+              target="_blank"
+              rel="noreferrer"
+              variants={buttonAnim}
+              whileHover="hover"
+              whileTap="tap"
+              className="border-2 border-black dark:border-white text-black dark:text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
+            >
+              <FaEye />
+              See My CV
             </motion.a>
           </motion.div>
         </motion.div>
