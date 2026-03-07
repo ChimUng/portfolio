@@ -87,7 +87,7 @@ const About = () => {
 
             {/* See My CV — mở tab mới, chiếm toàn màn hình */}
             <motion.a
-              href="NguyenHongDuy.pdf"
+              href="cv1.pdf"
               target="_blank"
               rel="noreferrer"
               variants={buttonAnim}
