@@ -55,7 +55,7 @@ function Footer({ dark, setDark }) {
                     </a>
                   </li>
                   <li>
-                    <a href="https://linkedin.com/in/hong-duy-chimung-8a2a6b368" target="_blank" rel="noreferrer" className="hover:text-white">
+                    <a href="https://www.linkedin.com/in/hong-duy-8a2a6b368/" target="_blank" rel="noreferrer" className="hover:text-white">
                       LinkedIn
                     </a>
                   </li>
@@ -91,7 +91,7 @@ function Footer({ dark, setDark }) {
 
             {/* LinkedIn icon */}
             <a
-              href="https://linkedin.com/in/hong-duy-chimung-8a2a6b368"
+              href="https://www.linkedin.com/in/hong-duy-8a2a6b368/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white ms-5"

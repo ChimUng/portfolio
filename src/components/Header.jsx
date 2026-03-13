@@ -75,7 +75,7 @@ const Header = ({ dark, setDark }) => {
               className="px-6 py-3 bg-black dark:bg-white text-white dark:text-black shadow-lg font-medium text-sm rounded-full flex items-center gap-2 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all hover:scale-105 active:scale-95">
               See My GitHub <FaArrowRight />
             </a>
-            <a href="https://linkedin.com/in/hong-duy-chimung-8a2a6b368" target="_blank" rel="noreferrer"
+            <a href="https://www.linkedin.com/in/hong-duy-8a2a6b368/" target="_blank" rel="noreferrer"
               className="px-6 py-3 bg-white dark:bg-gray-800 text-black dark:text-white border border-gray-200 dark:border-gray-600 shadow-lg font-medium text-sm rounded-full flex items-center gap-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all hover:scale-105 active:scale-95">
               Contact LinkedIn <FaArrowRight />
             </a>

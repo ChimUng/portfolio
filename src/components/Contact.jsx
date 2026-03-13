@@ -80,7 +80,7 @@ const MyContact = () => {
               </a>
 
               <div className="grid grid-cols-2 gap-4">
-                <a href="https://linkedin.com/in/hong-duy-chimung-8a2a6b368" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/hong-duy-8a2a6b368/" target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-3 border border-blue-300 dark:border-blue-700 p-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:bg-blue-600 hover:text-white group">
                   <div className="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg group-hover:bg-blue-500">
                     <FaLinkedin className="text-2xl text-blue-600 group-hover:text-white" />
