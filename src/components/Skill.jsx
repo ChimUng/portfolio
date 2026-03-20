@@ -29,6 +29,7 @@ const MySkill = () => {
         { label: "PostgreSQL", color: "4169E1", logo: "postgresql", logoColor: "white" },
         { label: "Redis",      color: "DC382D", logo: "redis",      logoColor: "white" },
         { label: "Supabase",   color: "3ECF8E", logo: "supabase",   logoColor: "white" },
+        { label: "Cloudflare", color: "F38020", logo: "cloudflare", logoColor: "white" },
       ]
     },
     {
