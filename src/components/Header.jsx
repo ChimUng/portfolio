@@ -59,7 +59,7 @@ const Header = ({ dark, setDark }) => {
           </motion.div>
 
           <motion.p variants={itemVariants} className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
-            Third-year Software Engineering student at Sai Gon University with a strong
+            Four-year Software Engineering student at Sai Gon University with a strong
             foundation in Java, JavaScript, and DevOps. Aiming to grow as a Full-Stack
             Engineer with a long-term goal of building scalable, high-performance distributed systems.
           </motion.p>

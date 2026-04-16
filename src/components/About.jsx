@@ -38,7 +38,7 @@ const About = () => {
           </motion.h1>
 
           <motion.p variants={itemSlide} className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
-            I'm a <strong className="text-gray-900 dark:text-white">third-year Software Engineering student</strong> at Sai Gon
+            I'm a <strong className="text-gray-900 dark:text-white">four-year Software Engineering student</strong> at Sai Gon
             University, passionate about building scalable, high-performance distributed
             systems. With hands-on experience in full-stack development, microservices
             architecture, and cloud deployment, I'm steadily working toward becoming a
