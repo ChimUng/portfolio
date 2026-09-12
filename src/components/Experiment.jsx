@@ -11,14 +11,15 @@ const Experiment = () => {
       {
         id: 1,
         title: "Animeflix – Anime Streaming Platform",
-        description: "Built a full-stack anime streaming platform integrating AniList API and multiple streaming providers with fallback handling. Designed scalable App Router architecture, implemented Redis caching, HLS video streaming, and deployed on Vercel.",
-        technologies: ["Next.js 15", "React 19", "TypeScript", "MongoDB", "Redis", "Vidstack", "Vercel"]
+        description: "Full-stack anime streaming platform built on a multi-tier caching architecture (Service Worker/PWA → region-aware Edge CDN → Redis → Origin) that cuts repeat-visit invocation to near-zero. Integrates AniList API and multiple streaming providers with fallback handling, HLS adaptive streaming secured via server-to-server signed-URL tokens, cursor-paginated MongoDB comments to avoid OFFSET overhead, and Pusher WebSocket for real-time comment/notification delivery.",
+        technologies: ["Next.js 15", " Node.js", "TypeScript", "MongoDB", "Redis", " Cloudflare", "SW", "Pusher"]
       },
       {
         id: 2,
         title: "Animeflix Third-Party System",
-        description: "Architected a scalable microservices backend serving as API gateway and third-party anime data aggregator. Implemented event-driven communication with Kafka, Redis caching, and a Hybrid AI Search module using RAG + vector embeddings. Deployed on AWS.",
-        technologies: ["Spring Boot", "Docker", "MongoDB", "Kafka", "Redis (Upstash)", "RAG", "AWS"]
+        description:
+        "Event-driven microservices backend serving as an API gateway and third-party data aggregator, with catalog and AI-search workloads decoupled via Kafka to isolate heavy cron/AI jobs from user-facing traffic. Features stateless JWT auth with access/refresh rotation, and a Hybrid Search engine combining Gemini embeddings with MongoDB Atlas Vector Search — tuned similarity threshold and score-gap detection across 5,000+ titles — refactored onto a reactive WebFlux pipeline that cut response latency from 2s to 600ms.",
+        technologies: ["Spring Boot", "Docker", "MongoDB", "Kafka", "Redis", "AWS", "RAG"]
       }
     ],
     certificates: [
