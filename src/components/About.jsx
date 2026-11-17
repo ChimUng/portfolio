@@ -74,8 +74,8 @@ const About = () => {
           <motion.div variants={itemSlide} className="flex gap-3 mt-8 flex-wrap">
             {/* Download CV */}
             <motion.a
-              href="NguyenHongDuy.pdf"
-              download="NguyenHongDuy_CV.pdf"
+              href="NguyenHongDuy_Fullstack.pdf"
+              download="NguyenHongDuy_Fullstack.pdf"
               variants={buttonAnim}
               whileHover="hover"
               whileTap="tap"
@@ -87,7 +87,7 @@ const About = () => {
 
             {/* See My CV — mở tab mới, chiếm toàn màn hình */}
             <motion.a
-              href="NguyenHongDuy.pdf"
+              href="NguyenHongDuy_Fullstack.pdf"
               target="_blank"
               rel="noreferrer"
               variants={buttonAnim}
